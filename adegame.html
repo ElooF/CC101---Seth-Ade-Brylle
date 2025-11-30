@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bible Quiz</title>
+  <link rel="stylesheet" href="ade.css" />
+</head>
+<body>
+ 
+  <video autoplay muted loop id="background-video">
+    <source src="ading/day.mp4" type="video/mp4" />
+  </video>
+
+  <div class="theme-toggle">
+    <input type="checkbox" id="themeSwitch" />
+    <label for="themeSwitch" class="switch">
+      <span class="sun">🌞</span>
+      <span class="moon">🌙</span>
+    </label>
+  </div>
+
+  <div class="container">
+    <div class="v-button">
+      <button class="ahh">
+        Your word is a lamp to my feet and a light to my path - Psalm 119:105
+      </button>
+    </div>
+
+    
+
+    <div class="chibi-group">
+      <a href="agallery.html"><img src="ading/image copy.png" alt="Chibi 1" class="chibi small float" /></a>
+      <img src="ading/image copy 2.png" alt="Chibi 2" class="chibi medium float" />
+      <img src="ading/image copy.png" alt="Chibi 3" class="chibi small float" />
+    </div>
+
+    <div class="button1">
+      <button class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+  </div>
+
+  <div class="button2">
+    <button class="btn" onclick="showAbout()">About</button>
+  </div>
+
+  <div class="right-section">
+    <div class="speech-bubble float">
+      <img src="ading/Start.png" alt="Speech Bubble" />
+    </div>
+    <img src="ading/ading.png" alt="Chibi Ade" class="chibi-big float" />
+  </div>
+
+  <div id="about-popup" class="popup">
+    <div class="popup-content">
+      <p>
+        Ready to become a Bible Master? This dynamic, educational quiz
+        will expand your understanding of the Bible. Answer questions
+        on key figures, events, and verses across the Old and New Testaments.
+        Challenge your memory and grow your faith in an entertaining,
+        fast-paced format. God bless your learning journey!
+      </p>
+      <button class="close-btn" onclick="closeAbout()">Close</button>
+    </div>
+  </div>
+
+
+  <div class="extra-content">
+    <button class="music-btn" id="musicToggle">
+      <img id="musicIcon" src="ading/play.png" alt="Play" />
+    </button>
+
+    <audio id="bgMusic" loop autoplay>
+      <source src="ading/music.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+
+  <div id="skinsModal" class="modal">
+    <div class="modal-content">
+      <h2>Choose Your Character</h2>
+      <div class="skins-grid">
+        <img src="ading/ading.png" alt="Ading" onclick="selectSkin('ading/ading.png')" />
+        <img src="ading/aira.png" alt="Aira" onclick="selectSkin('ading/aira.png')" />
+        <img src="ading/boyseth.png" alt="Boyseth" onclick="selectSkin('ading/boyseth.png')" />
+        <img src="ading/cj.png" alt="CJ" onclick="selectSkin('ading/cj.png')" />
+        <img src="ading/clir.png" alt="Clir" onclick="selectSkin('ading/clir.png')" />
+        <img src="ading/daryl.png" alt="Daryl" onclick="selectSkin('ading/daryl.png')" />
+        <img src="ading/dex.png" alt="Dex" onclick="selectSkin('ading/dex.png')" />
+        <img src="ading/jeremisu.png" alt="Jeremisu" onclick="selectSkin('ading/jeremisu.png')" />
+        <img src="ading/jonjom.png" alt="Jonjom" onclick="selectSkin('ading/jonjom.png')" />
+        <img src="ading/mocs.png" alt="Mocs" onclick="selectSkin('ading/mocs.png')" />
+        <img src="ading/nat.png" alt="Nat" onclick="selectSkin('ading/nat.png')" />
+      </div>
+      <button class="close-btn" onclick="closeSkins()">Close</button>
+    </div>
+  </div>
+
+  <script src="ade.js"></script>
+</body>
+</html>

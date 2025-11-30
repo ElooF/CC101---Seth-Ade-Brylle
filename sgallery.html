@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seth's Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght=500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <a href="home.html"><img src="static/logo.png" alt="Logo" class="logo"></a>
+        <div class="hero-content">
+            <h1>Seth's Gallery</h1>
+            <p>This shows my precious memories</p><br>
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="index.html" class="btn">Return Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        
+        <section class="gallery-section">
+            <h2 class="section-title">Pursuits & Passions (Hobbies)</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" onclick="openModal('static/vb.jpg', 'Volleyball is my go to stress reliever.')">
+                    <img src="static/vb.jpg" alt="Volleyball" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Volleyball</p>
+                        <p class="description-text">My passion for volleyball is not just a mere game, it's a way to escape my problems.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/nightcode.jpg', 'Late night coding session fueled by coffee. Building my first functional web app.')">
+                    <img src="static/nightcode.jpg" alt="Late Night Coding" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Late Night Coding</p>
+                        <p class="description-text">Late night coding session fueled by passion. Building ang practicing my own knowledge.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">The College Path</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" onclick="openModal('static/groupie.jpg', 'These are the friends that made everyday enjoyable.')">
+                    <img src="static/groupie.jpg" alt="Groupie" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Friend's along the way</p>
+                        <p class="description-text">These are the friends that made everyday enjoyable.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/study.jpg', 'The group that shared all their knowledge to lessen the struggles of others.')">
+                    <img src="static/study.jpg" alt="Study Group" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Shared Struggles</p>
+                        <p class="description-text">The group that shared all their knowledge to lessen the struggles of others.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">The Bardagulan Moments</h2>
+            
+            <div class="gallery-grid">
+
+                <div class="gallery-item" onclick="openModal('static/bardagulan.jpg', 'One of the fun moments we had, this picture speaks a thousand words.')">
+                    <img src="static/bardagulan.jpg" alt="Bardagulan" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Bardagulan</p>
+                        <p class="description-text">One of the fun moments we had, this picture speaks a thousand words.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/linog.jpg', 'A moment before Disaster.')">
+                    <img src="static/linog.jpg" alt="Linog" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Before Disaster</p>
+                        <p class="description-text">This is a picture we took before an unexpected event occured.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+    </main>
+    
+    <div id="myModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+    
+    <footer>
+        <p>If its not worth it don't do it.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

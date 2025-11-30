@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button"><h1>Documentation</h1></a>
+    
+    <div class="image-container">
+        <div class="image"><img src="ading/ading.jpg" alt=""></div>
+        <div class="image"><img src="ading/boyset.jpg" alt=""></div>
+        <div class="image"><img src="ading/de.jpg" alt=""></div>
+        <div class="image"><img src="ading/sethto.jpg" alt=""></div>
+        <div class="image"><img src="ading/ssko.png" alt=""></div>
+        <div class="video"><video src="ading/botet.mp4" controls></video></div>
+        <div class="video"><video src="ading/aaddiinggg.mp4" controls></video></div>
+        <div class="video"><video src="ading/botsat.mp4" controls></video></div>
+        <div class="video"><video src="ading/hys.mp4" controls></video></div>
+        <div class="video"><video src="ading/cetso.mp4" controls></video></div>
+    </div>
+    <div class="popup">
+        <span>&times;</span>
+        <img src="" alt="" style="display: none;">
+        <video src="" controls style="display: none;"></video>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.image img');
+            const videos = document.querySelectorAll('.video video');
+            const popup = document.querySelector('.popup');
+            const popupImg = document.querySelector('.popup img');
+            const popupVideo = document.querySelector('.popup video');
+            const closeBtn = document.querySelector('.popup span');
+
+            images.forEach(img => {
+                img.addEventListener('click', function() {
+                    popupImg.src = this.src;
+                    popupImg.style.display = 'block';
+                    popupVideo.style.display = 'none';
+                    popup.style.display = 'flex';
+                });
+            });
+
+            videos.forEach(video => {
+                video.addEventListener('click', function() {
+                    popupVideo.src = this.src;
+                    popupVideo.style.display = 'block';
+                    popupImg.style.display = 'none';
+                    popup.style.display = 'flex';
+                });
+            });
+
+            closeBtn.addEventListener('click', function() {
+                popup.style.display = 'none';
+                popupImg.src = '';
+                popupVideo.src = '';
+            });
+
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) {
+                    popup.style.display = 'none';
+                    popupImg.src = '';
+                    popupVideo.src = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

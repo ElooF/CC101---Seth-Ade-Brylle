@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bible Quiz</title>
+  <link rel="stylesheet" href="ade.css" />
+</head>
+<body>
+  <div class="phone-container">
+    <video autoplay muted loop id="background-video">
+      <source src="ading/day.mp4" type="video/mp4" />
+    </video>
+
+    <div class="theme-toggle">
+      <input type="checkbox" id="themeSwitch" />
+      <label for="themeSwitch" class="switch">
+        <span class="sun">🌞</span>
+        <span class="moon">🌙</span>
+      </label>
+    </div>
+
+    <div class="quiz-container">
+    <div class="quiz-content">
+      <button id="back-btn" onclick="goHome()">HOME</button>
+      <div id="question-container">
+        <h2 id="question">Question</h2>
+      </div>
+      <div id="positions" class="positions">
+        <div class="position" data-index="0"></div>
+        <div class="position" data-index="1"></div>
+        <div class="position" data-index="2"></div>
+        <div class="position" data-index="3"></div>
+      </div>
+
+      <div id="result-container" style="display: none;">
+        <h2 id="result">Result</h2>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+      </div>
+
+      <div id="end-container" style="display: none;">
+        <h2>Quiz Complete!</h2>
+        <p id="final-score">Your Score:</p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+        <button onclick="goHome()">Back</button>
+      </div>
+    </div>
+
+    <div class="score-display">
+      <p>Score: <span id="score">0</span></p>
+      <p>Question: <span id="current-question">1</span>/<span id="total-questions">10</span></p>
+      <p>Time Left: <span id="timer">30</span>s</p>
+    </div>
+
+    <div class="character-display">
+      <img id="selectedCharacter" src="ading/" alt="Selected Character" />
+    </div>
+  </div>
+
+  <script src="ade.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brylle's Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght=500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <a href="brylle.html"><img src="static/logo2.png" alt="Logo" class="logo"></a>
+        <div class="hero-content">
+            <h1>Brylle's Gallery</h1>
+            <p>Riding is not just a journey, it's my life</p><br>
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="brylle.html" class="btn">Return Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        
+        <section class="gallery-section">
+            <h2 class="section-title">My Hobbies</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" onclick="openModal('static/4.jpg', 'Gaming session with my crew. Immersed in virtual worlds and epic quests.')">
+                    <img src="static/4.jpg" alt="Gaming" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Gaming</p>
+                        <p class="description-text">Gaming session to avoid our problems and escape reality.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/2.jpg', 'Late night riding with my friends is always an adventure.')">
+                    <img src="static/2.jpg" alt="Rides" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Late Night Rides</p>
+                        <p class="description-text">Riding with my friends, making new memories and fun times.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">The College Path</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" onclick="openModal('static/3.jpg', 'The friends that helped me through college.')">
+                    <img src="static/3.jpg" alt="College friends" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">College friends</p>
+                        <p class="description-text">The friends i've made in college, these people helped me get through my problems in college.    </p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/5.jpg', 'These people makes my day better just by being with them , everyday is such a blast.')">
+                    <img src="static/5.jpg" alt="Homies2" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">My Best Friends</p>
+                        <p class="description-text">These people makes my day better just by being with them , everyday is such a blast.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">With the Homies</h2>
+            
+            <div class="gallery-grid">
+
+                <div class="gallery-item" onclick="openModal('static/1.jpg', '0.5 with the homies.')">
+                    <img src="static/1.jpg" alt="Homies" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Homies</p>
+                        <p class="description-text">This picture shows the vibe with my homies.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/6.jpg', 'Random captured moment during our class.')">
+                    <img src="static/6.jpg" alt="Rand" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Random Memory</p>
+                        <p class="description-text">This is a random picture taken by one of my homies during our class.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+    </main>
+    
+    <div id="myModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+    
+    <footer>
+        <p>mototoy</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

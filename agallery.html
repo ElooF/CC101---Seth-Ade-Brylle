@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adellyn's Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght=500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <a href="adegame.html"><img src="static/logo1.png" alt="Logo" class="logo"></a>
+        <div class="hero-content">
+            <h1>Adellyn's Gallery</h1>
+            <p>Journey of my sisterhood</p><br>
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="ade.html" class="btn">Return Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        
+        <section class="gallery-section">
+            <h2 class="section-title">Pursuits & Passions (Hobbies)</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" onclick="openModal('static/books.png', 'My passion for reading has brought me countless joy in college.')">
+                    <img src="static/books.png" alt="books" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Books</p>
+                        <p class="description-text">Reading books is my passion, it gives me joy, warmth, and such emotion. When reading a book it allows me to travel to another world where it is full of emotion and scenery, It brings me joy.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/kanta.png', 'First singing event that I joined.')">
+                    <img src="static/kanta.png" alt="Sing" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Singing</p>
+                        <p class="description-text">This is the first ever singing event that I took part of, the experiences here was nothing like other experiences I had.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">The College Path</h2>
+            
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" onclick="openModal('static/Bertde.png', 'The picture that started it all.')">
+                    <img src="static/Bertde.png" alt="Bertde" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Happy Birthday</p>
+                        <p class="description-text">On this day September 12, I gathered the courage to approach my friend who was in a band and got a picture of us together. On this very day, both of us are born. </p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/projik.png', 'First Project Submited.')">
+                    <img src="static/projik.png" alt="Study Group" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">First Group Project</p>
+                        <p class="description-text">The project that I did all by myself because of difficulties in schedules, this particular experience made my influence around my friends more bogsh.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title">Friends through college</h2>
+            
+            <div class="gallery-grid">
+
+                <div class="gallery-item" onclick="openModal('static/groupie2.png', 'On this day, I learned alot about these three amazing people. Simple things are the best.')">
+                    <img src="static/groupie2.png" alt="groupie2" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">Getting to know</p>
+                        <p class="description-text">On this day, I learned alot about these three amazing people. Simple things are the best.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('static/bff.png', 'This is the first friend I made in college.')">
+                    <img src="static/bff.png" alt="bff" class="gallery-image">
+                    <div class="description-box">
+                        <p class="description-title">My Best Friend</p>
+                        <p class="description-text">This women approached me on the first day, and I didn't expect that this woman would become my bestest friend that will help me get through my ups and downs.</p>
+                    </div>
+                </div>
+                
+                </div>
+        </section>
+
+    </main>
+    
+    <div id="myModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+    
+    <footer>
+        <p>Better late than NEVER.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
